@@ -11,12 +11,16 @@
             padding: 0;
             background-color: #121212;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #1f1f1f;
             padding: 1em 0;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
         }
         header h1 {
             margin: 0;
@@ -44,6 +48,7 @@
         section {
             padding: 4em 2em;
             text-align: center;
+            flex-grow: 1;
         }
         .about {
             background-color: #1a1a1a;
@@ -57,12 +62,7 @@
             padding: 1em 0;
             position: relative;
             width: 100%;
-        }
-        .container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            flex-shrink: 0;
         }
         @media (min-width: 768px) {
             section {
@@ -72,31 +72,29 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Bean Developments</h1>
-        </header>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-            <a href="downloads.html">Download Links</a>
-        </nav>
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>We are Bean Developments, a company dedicated to creating immersive VR video games for people to enjoy. Our mission is to push the boundaries of virtual reality and provide unforgettable gaming experiences.</p>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Email us at: <a href="mailto:beandevelopments@myyahoo.com" style="color: #1e90ff;">beandevelopments@myyahoo.com</a></p>
-            <p>Follow us on social media:</p>
-            <p>
-                <a href="https://discord.com/invite/xSemFkKyuH" style="color: #1e90ff;">Discord</a> | 
-                <a href="https://www.facebook.com/profile.php?id=61556441781141" style="color: #1e90ff;">Facebook</a>
-            </p>
-        </section>
-        <footer>
-            <p>&copy; 2024 Bean Developments. All rights reserved.</p>
-        </footer>
-    </div>
+    <header>
+        <h1>Bean Developments</h1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="downloads.html">Download Links</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are Bean Developments, a company dedicated to creating immersive VR video games for people to enjoy. Our mission is to push the boundaries of virtual reality and provide unforgettable gaming experiences.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email us at: <a href="mailto:beandevelopments@myyahoo.com" style="color: #1e90ff;">beandevelopments@myyahoo.com</a></p>
+        <p>Follow us on social media:</p>
+        <p>
+            <a href="https://discord.com/invite/xSemFkKyuH" style="color: #1e90ff;">Discord</a> | 
+            <a href="https://www.facebook.com/profile.php?id=61556441781141" style="color: #1e90ff;">Facebook</a>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Bean Developments. All rights reserved.</p>
+    </footer>
 </body>
 </html>
