@@ -69,11 +69,38 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        
         section {
             padding: 4em 2em;
             text-align: center;
             flex-grow: 1;
+        }
+        .button-container {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+        button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+        #code {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff4500;
         }
         footer {
             background-color: #1f1f1f;
@@ -89,6 +116,11 @@
             }
         }
     </style>
+    <script>
+        function showCode() {
+            document.getElementById('code').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -109,6 +141,10 @@
     <section>
         <h2>Cave Attack Privacy Policy</h2>
         <p>Details about the privacy policy for Cave Attack will go here.</p>
+        <div class="button-container">
+            <button onclick="showCode()">Show Code</button>
+            <p id="code">yu9-zjn7-q5i</p>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Bean Developments. All rights reserved.</p>
