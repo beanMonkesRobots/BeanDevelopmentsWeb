@@ -45,6 +45,30 @@
         nav a:hover {
             color: #1e90ff;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2a2a2a;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #1e90ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
         section {
             padding: 4em 2em;
             text-align: center;
@@ -100,6 +124,13 @@
         <a href="index.html#about">About Us</a>
         <a href="index.html#contact">Contact</a>
         <a href="downloads.html">Download Links</a>
+        <div class="dropdown">
+            <a href="#">Privacy Policies</a>
+            <div class="dropdown-content">
+                <a href="privacy_nightmare_runners.html">Nightmare Runners</a>
+                <a href="privacy_cave_attack.html">Cave Attack</a>
+            </div>
+        </div>
     </nav>
     <section class="downloads">
         <h2>Download Our Latest Games</h2>
