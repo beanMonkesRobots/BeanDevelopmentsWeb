@@ -18,4 +18,75 @@
         header {
             background-color: #1f1f1f;
             padding: 1em 0;
-           
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f;
+            padding: 0.5em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1e90ff;
+        }
+        section {
+            padding: 4em 2em;
+            text-align: center;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            width: 100%;
+            flex-shrink: 0;
+        }
+        @media (min-width: 768px) {
+            section {
+                padding: 6em 4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy - Cave Attack</h1>
+    </header>
+    <nav>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="downloads.html">Download Links</a>
+        <div class="dropdown">
+            <a href="#">Privacy Policies</a>
+            <div class="dropdown-content">
+                <a href="privacy_nightmare_runners.html">Nightmare Runners</a>
+                <a href="privacy_cave_attack.html">Cave Attack</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h2>Cave Attack Privacy Policy</h2>
+        <p>Details about the privacy policy for Cave Attack will go here.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Bean Developments. All rights reserved.</p>
+    </footer>
+</body>
+</html>
